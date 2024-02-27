@@ -1,11 +1,10 @@
-resource "aws_security_group" "allow_tls" {
-  name        = "allow_tls"
-  description = "Allow TLS inbound traffic and all outbound traffic"
-  vpc_id      = data.aws_vpc.existing_vpc.id
+# Define the security group resource
+resource "aws_security_group" "example_sg" {
+  name        = var.security_group_name
+  description = var.security_group_description
+  vpc_id      = var.vpc_id
 
-  tags = {
-    Name = "allow_tls"
-  }
+  // Ingress and egress rules as needed
 }
 
 # resource "aws_instance" "my_instance" {
