@@ -1,7 +1,6 @@
 variable "ami_id" {
   type        = string
-  description = "AMI ID to be used"
-  default     = null 
+  description = "AMI ID to be used" 
 }
 
 variable "env" {
