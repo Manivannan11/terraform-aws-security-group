@@ -1,14 +1,11 @@
-# variable "security_group_name" {
-#   type        = string
-#   description = "The name of the security group"
-# }
+variable "ami_id" {
+  type        = string
+  description = "AMI ID to be used"
+}
 
-# variable "security_group_description" {
-#   type        = string
-#   description = "The description of the security group"
-# }
+variable "env" {
+  type        = string
+  description = "Environment that app is going to run"
+}
 
-# variable "vpc_id" {
-#   type        = string
-#   description = "The ID of the VPC"
-# }
+

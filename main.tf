@@ -8,6 +8,6 @@
 # }
 
 resource "aws_instance" "my_instance" {
-  ami           = "ami-0440d3b780d96b29d" # us-west-2
+  ami           = local.img_ami_id 
   instance_type = "t2.micro"
 }
